@@ -1,1 +1,187 @@
-h1 Test
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel='stylesheet' href='/assets/styles/main.min.css')
+  body
+    .wrapper
+      header.header
+        .logo
+          span.logo-text
+          .header__burger
+        .search
+          .search__icon
+          .search__bar
+          .dropdown
+        .profile
+          .profile__picture
+            .profile__image
+          .profile__info
+            span.profile__name
+            span.profile__occup
+          .profile__logout
+      aside.sidebar
+        .sidebar__wrap
+          ul.sidebar__menu
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Главная
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню в 2 строчки
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+            li.sidebar__item
+              .sidebar__img
+              .sidebar__text Пункт меню
+      main.main-content
+        .container
+          .breadcrumbs
+            a.breadcrubms__main(href="") Главная
+            a.breadcrubms__this(href="") Поиск
+          .results
+            .results-formal
+              .results__header
+                .results__search-icon
+                  .results__search-image
+                .results__info
+                  h2.results__heading По формам сбора
+                  .hide-button
+                    .hide-button__icon
+              .results-formal__controls
+                .results__search
+                  .results__searchbar
+                  .results__search-icon
+                  .dropdown-arrow
+                .results__button
+                  span.button__text
+                  .dropdown-arrow
+              ul.datasets
+                li.dataset
+                  input(type="checkbox" class="dataset__checkbox")
+                  img.dataset__icon
+                  span.dataset__heading Открытые данные
+                  .collapse-expand-icon
+                  ul.dataset__list
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 1.
+                      span.dataset__name Сведения
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 2.
+                      span.dataset__name Сведения длинное название
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 3.
+                      span.dataset__name Сведения длинное название
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 4.
+                      span.dataset__name Сведения длинное название
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 5.
+                      span.dataset__name Сведения очень длинное название уместилось в 3 строки
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 6.
+                      span.dataset__name Сведения очень длинное название уместилось в 3 строки
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 7.
+                      span.dataset__name Сведения очень длинное название уместилось в 3 строки
+                li.dataset
+                  input(type="checkbox" class="dataset__checkbox")
+                  img.dataset__icon
+                  span.dataset__heading Данные 2
+                  .collapse-expand-icon
+                  ul.dataset__list
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 1.
+                      span.dataset__name Сведения
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 2.
+                      span.dataset__name Сведения длинное название
+                li.dataset
+                  input(type="checkbox" class="dataset__checkbox")
+                  img.dataset__icon
+                  span.dataset__heading Данные 3
+                  .collapse-expand-icon
+                  ul.dataset__list
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 1.
+                      span.dataset__name Сведения
+                    li.dataset__item
+                      input(type="checkbox" class="dataset__checkbox")
+                      a.dataset__chapter(href="") Глава 2.
+                      span.dataset__name Сведения длинное название
+            .results-special
+              .results__header
+                .results__search-icon
+                  .results__search-image
+                .results__info
+                  h2.results__heading Специализированные
+                  .hide-button
+                    .hide-button__icon
+              .results-special__filter
+                span.filter__name
+                .filter__dropdown
+                  .dropdown
+              table.table
+                thead.table__head
+                  tr.table__row
+                    th.table-head__cell Наименование отчета
+                    th.table-head__cell Описание
+                    th.table-head__cell Подробности
+                tbody
+                  tr.table__row
+                    td.table-body__cell Незагружаемые
+                    td.table-body__cell Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    td.table-body__cell  
+                      img.info-icon(src="", alt="")
+                      img.play-icon(src="", alt="")
+                  tr.table__row
+                    td.table-body__cell Незагружаемые
+                    td.table-body__cell Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    td.table-body__cell  
+                      img.info-icon(src="", alt="")
+                      img.play-icon(src="", alt="")
+                  tr.table__row
+                    td.table-body__cell Незагружаемые
+                    td.table-body__cell Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    td.table-body__cell  
+                      img.info-icon(src="", alt="")
+                      img.play-icon(src="", alt="")
+                
+              
+                
+              
