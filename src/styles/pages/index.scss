@@ -1,8 +1,62 @@
 .wrapper {
     display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
 }
 
 .header {
     height: rem(70px);
+    width: 100%;
     display: flex;
+}
+
+.logo {
+    width: rem(190px);
+    background-color: $darkblue;
+}
+
+.search {
+    flex-grow: 1;
+}
+
+.profile {
+    width: rem(260px);
+}
+
+.sidebar {
+    width: rem(190px);
+    background-color: $blue;
+    color: white;
+    font-family: 'Ubuntu Medium', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.sidebar__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(40px);
+    &:first-child {
+        margin-top: rem(20px);
+    }
+}
+
+.sidebar__picture {
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    margin-left: rem(23px);
+    margin-right: rem(13px);
+}
+
+.sidebar__img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar__text {
+    font-size: rem(11px);
+    display: inline-block;
 }
