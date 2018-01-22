@@ -10,20 +10,34 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="logo"><span class="logo-text"></span>
-          <div class="header__burger"></div>
-        </div>
+        <div class="logo"><span class="logo-text">Лого</span><a class="header__burger">
+            <div class="header__burger-bar top"></div>
+            <div class="header__burger-bar middle"></div>
+            <div class="header__burger-bar bottom"></div></a></div>
         <div class="search">
-          <div class="search__icon"></div>
-          <div class="search__bar">Поиск</div>
-          <div class="dropdown"></div>
+          <div class="search__icon">
+            <svg class="search__img">
+              <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens"></use>
+            </svg>
+          </div>
+          <div class="search-bar">
+            <input class="search-bar__input" type="search" placeholder="Поиск"/>
+          </div>
+          <div class="search-select">
+            <select class="search-select__menu" name="search" size="1">
+              <option selected="selected" value="name">по названию</option>
+              <option value="date">по дате</option>
+            </select>
+          </div>
         </div>
         <div class="profile">
-          <div class="profile__picture">
-            <div class="profile__image"></div>
+          <div class="profile__picture"><img class="profile__image" src="assets/images/profile.jpg"/></div>
+          <div class="profile__info"><span class="profile__name">Иванов Иван</span><span class="profile__occup">должность</span></div>
+          <div class="profile__logout">
+            <svg class="logout__img">
+              <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#logout"></use>
+            </svg>
           </div>
-          <div class="profile__info"><span class="profile__name"></span><span class="profile__occup"></span></div>
-          <div class="profile__logout"></div>
         </div>
       </header>
       <div class="content">
@@ -31,126 +45,226 @@
           <div class="sidebar__wrap">
             <ul class="sidebar__menu">
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="./assets/images/home.png"/></div>
-                <div class="sidebar__text">Главная</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#home"></use>
+                  </svg>
+                </div><a class="sidebar__link">Главная</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/lens.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/puzzle.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#puzzle"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/paper.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img sidebar__img-paper">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#paper"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/download.png"/></div>
-                <div class="sidebar__text">Пункт меню в 2 строчки</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#download"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню в 2 строчки</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/buble.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#buble"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/hash.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#hash"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/book.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#book"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/window.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#window"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/person.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#person"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
               <li class="sidebar__item">
-                <div class="sidebar__picture"><img class="sidebar__img" src="assets/images/pen.png"/></div>
-                <div class="sidebar__text">Пункт меню</div>
+                <div class="sidebar__picture">
+                  <svg class="sidebar__img">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#pen"></use>
+                  </svg>
+                </div><a class="sidebar__link">Пункт меню</a>
               </li>
             </ul>
           </div>
         </aside>
         <main class="container">
-          <div class="breadcrumbs"><a class="breadcrubms__main" href="">Главная</a><a class="breadcrubms__this" href="">Поиск</a></div>
+          <div class="breadcrumbs"><a class="breadcrumbs__link breadcrubms__main" href="">Главная</a><a class="breadcrumbs__link breadcrubms__this" href="">Поиск</a></div>
           <div class="results">
             <div class="results-formal">
               <div class="results__header">
-                <div class="results__search-icon">
-                  <div class="results__search-image"></div>
+                <div class="results__search-icon results__search-icon-formal">
+                  <svg class="results__img-icon">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens"></use>
+                  </svg>
                 </div>
                 <div class="results__info">
                   <h2 class="results__heading">По формам сбора</h2>
                   <div class="hide-button">
-                    <div class="hide-button__icon"></div>
+                    <svg class="hide__img">
+                      <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#minus"></use>
+                    </svg>
                   </div>
                 </div>
               </div>
               <div class="results-formal__controls">
                 <div class="results__search">
-                  <div class="results__searchbar"></div>
-                  <div class="results__search-icon"></div>
-                  <div class="dropdown-arrow"></div>
+                  <input class="results__searchbar" type="search" placeholder="Форма поиска"/>
+                  <div class="results__search-icon results__search-icon-controls">
+                    <svg class="results__search-img">
+                      <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens"></use>
+                    </svg>
+                    <div class="dropdown-arrow">
+                      <svg class="arrow__icon">
+                        <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div class="results__button"><span class="button__text"></span>
-                  <div class="dropdown-arrow"></div>
+                <div class="results__button">
+                  <select class="results-select__menu" name="results" size="1">
+                    <option selected="selected" value="report">Сформировать отчет</option>
+                    <option value="balance">Посмотреть баланс</option>
+                  </select>
+                  <div class="dropdown-arrow dropdown-arrow__results">
+                    <svg class="arrow__icon">
+                      <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#arrow"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
               <ul class="datasets">
                 <li class="dataset">
-                  <input class="dataset__checkbox" type="checkbox"/><img class="dataset__icon"/><span class="dataset__heading">Открытые данные</span>
-                  <div class="collapse-expand-icon"></div>
+                  <div class="dataset-info">
+                    <input class="css-checkbox" type="checkbox" id="check1"/>
+                    <label class="css-label" for="check1"></label>
+                    <div class="dataset__icon">
+                      <svg class="dataset__icon-img">
+                        <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#folder"></use>
+                      </svg>
+                    </div><span class="dataset__heading">Открытые данные</span>
+                    <div class="collapse-expand-icon"></div>
+                  </div>
                   <ul class="dataset__list">
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 1.</a><span class="dataset__name">Сведения</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check2"/>
+                        <label class="css-label" for="check2"></label><a class="dataset__chapter" href="">Глава 1.</a><span class="dataset__name">Сведения</span>
+                      </div>
                     </li>
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 2.</a><span class="dataset__name">Сведения длинное название</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check3"/>
+                        <label class="css-label" for="check3"></label><a class="dataset__chapter" href="">Глава 2.</a><span class="dataset__name">Сведения длинное название</span>
+                      </div>
                     </li>
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 3.</a><span class="dataset__name">Сведения длинное название</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check4"/>
+                        <label class="css-label" for="check4"></label><a class="dataset__chapter" href="">Глава 3.</a><span class="dataset__name">Сведения длинное название</span>
+                      </div>
                     </li>
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 4.</a><span class="dataset__name">Сведения длинное название</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check5"/>
+                        <label class="css-label" for="check5"></label><a class="dataset__chapter" href="">Глава 4.</a><span class="dataset__name">Сведения длинное название</span>
+                      </div>
                     </li>
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 5.</a><span class="dataset__name">Сведения очень длинное название уместилось в 3 строки</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check6"/>
+                        <label class="css-label" for="check6"></label><a class="dataset__chapter" href="">Глава 5.</a><span class="dataset__name">Сведения очень длинное название уместилось в 3 строки</span>
+                      </div>
                     </li>
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 6.</a><span class="dataset__name">Сведения очень длинное название уместилось в 3 строки</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check7"/>
+                        <label class="css-label" for="check7"></label><a class="dataset__chapter" href="">Глава 6.</a><span class="dataset__name">Сведения очень длинное название уместилось в 3 строки</span>
+                      </div>
                     </li>
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 7.</a><span class="dataset__name">Сведения очень длинное название уместилось в 3 строки</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check8"/>
+                        <label class="css-label" for="check1"></label><a class="dataset__chapter" href="">Глава 7.</a><span class="dataset__name">Сведения очень длинное название уместилось в 3 строки</span>
+                      </div>
                     </li>
                   </ul>
                 </li>
                 <li class="dataset">
-                  <input class="dataset__checkbox" type="checkbox"/><img class="dataset__icon"/><span class="dataset__heading">Данные 2</span>
-                  <div class="collapse-expand-icon"></div>
+                  <div class="dataset-info">
+                    <input class="css-checkbox" type="checkbox" id="check9"/>
+                    <label class="css-label" for="check9"></label><img class="dataset__icon"/><span class="dataset__heading">Данные 2</span>
+                    <div class="collapse-expand-icon"></div>
+                  </div>
                   <ul class="dataset__list">
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 1.</a><span class="dataset__name">Сведения</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check10"/>
+                        <label class="css-label" for="check10"></label><a class="dataset__chapter" href="">Глава 1.</a><span class="dataset__name">Сведения</span>
+                      </div>
                     </li>
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 2.</a><span class="dataset__name">Сведения длинное название</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check11"/>
+                        <label class="css-label" for="check11"></label><a class="dataset__chapter" href="">Глава 2.</a><span class="dataset__name">Сведения длинное название</span>
+                      </div>
                     </li>
                   </ul>
                 </li>
                 <li class="dataset">
-                  <input class="dataset__checkbox" type="checkbox"/><img class="dataset__icon"/><span class="dataset__heading">Данные 3</span>
-                  <div class="collapse-expand-icon"></div>
+                  <div class="dataset-info">
+                    <input class="css-checkbox" type="checkbox" id="check12"/>
+                    <label class="css-label" for="check12"></label><img class="dataset__icon"/><span class="dataset__heading">Данные 3</span>
+                    <div class="collapse-expand-icon"></div>
+                  </div>
                   <ul class="dataset__list">
                     <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 1.</a><span class="dataset__name">Сведения</span>
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check13"/>
+                        <label class="css-label" for="check13"></label><a class="dataset__chapter" href="">Глава 1.</a><span class="dataset__name">Сведения</span>
+                      </div>
                     </li>
-                    <li class="dataset__item">
-                      <input class="dataset__checkbox" type="checkbox"/><a class="dataset__chapter" href="">Глава 2.</a><span class="dataset__name">Сведения длинное название</span>
+                    <li class="dataset__item dataset__item-last">
+                      <div class="dataset__item-info">
+                        <input class="css-checkbox" type="checkbox" id="check14"/>
+                        <label class="css-label" for="check14"></label><a class="dataset__chapter" href="">Глава 2.</a><span class="dataset__name">Сведения длинное название</span>
+                      </div>
                     </li>
                   </ul>
                 </li>
@@ -159,12 +273,16 @@
             <div class="results-special">
               <div class="results__header">
                 <div class="results__search-icon">
-                  <div class="results__search-image"></div>
+                  <svg class="results__img-icon">
+                    <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens"></use>
+                  </svg>
                 </div>
                 <div class="results__info">
                   <h2 class="results__heading">Специализированные</h2>
                   <div class="hide-button">
-                    <div class="hide-button__icon"></div>
+                    <svg class="hide__img">
+                      <use xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#minus"></use>
+                    </svg>
                   </div>
                 </div>
               </div>
