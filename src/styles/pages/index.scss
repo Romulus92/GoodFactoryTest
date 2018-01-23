@@ -703,7 +703,7 @@ label.css-label {
 }
 
 .table__row {
-    //display: flex;
+    display: flex;
     border-bottom: 1px solid #ebf0f2;
 }
 
@@ -732,18 +732,22 @@ label.css-label {
     padding-right: rem(5px);
     padding-left: rem(5px);
     font-weight: bold;
+    flex-grow: 1;
 }
 
 .table-body__cell-text {
     padding-right: rem(26px);
     color: #919191;
+    flex-grow: 1;
 }
 
 .table__cell-first {
     width: rem(232px);
+    min-width: rem(232px);
     font-weight: bold;
     @include tablets {
         width: rem(140px);
+        min-width: rem(140px);
     }
 }
 
@@ -751,7 +755,7 @@ label.css-label {
     width: rem(72px);
     display: flex;
     justify-content: flex-end;
-    margin-right: 45px;
+    margin-right: rem(45px);
     @include phones {
         width: initial;
         margin-right: 0;
@@ -759,8 +763,11 @@ label.css-label {
 }
 
 .table-body__cell.table__cell-middle {
-    flex-grow: 1;
     color: #919191;
+}
+
+.table__cell-middle {
+    flex-grow: 1;
 }
 
 .info-icon {
