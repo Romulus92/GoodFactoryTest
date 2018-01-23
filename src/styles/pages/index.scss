@@ -11,6 +11,9 @@
     height: rem(70px);
     width: 100%;
     display: flex;
+    @include tablets {
+        height: rem(55px);
+    }
 }
 
 .logo {
@@ -19,6 +22,11 @@
     background-color: $darkblue;
     display: flex;
     align-items: center;
+    @include tablets {
+        width: rem(55px);
+        min-width: initial;
+        justify-content: center;
+    }
 }
 
 .logo-text {
@@ -29,6 +37,31 @@
     font-size: rem(20px);
     margin-left: rem(23px);
     margin-right: rem(80px);
+    @include tablets {
+        display: none;
+    }
+}
+
+.logo-text__search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}
+
+.logo-text__search-text {
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Ubuntu Medium', Arial, Helvetica, sans-serif;
+    font-size: rem(20px);
+    display: none;
+    @include tablets {
+        display: flex;
+    }
 }
 
 .header__burger {
@@ -50,11 +83,20 @@
     flex-grow: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-right: 2px solid #edeef2;
+    @include tablets {
+        border-right: none;
+        background-color: #0f5091;
+    }
 }
 
 .profile {
     width: rem(260px);
+    @include tablets {
+        width: rem(55px);
+        background-color: #0f5091;
+    }
 }
 
 .sidebar {
@@ -64,15 +106,32 @@
     color: white;
     font-family: 'Ubuntu Medium', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    @include netbooks {
+        display: none;
+    }
 }
 
 .sidebar__item {
     display: flex;
     align-items: center;
-    margin-bottom: rem(40px);
-    &:first-child {
-        margin-top: rem(20px);
+    position: relative;
+    /* padding-top: rem(20px);
+    padding-bottom: rem(20px); */
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
+    &:hover>.hover-border {
+        display: block;
+    }
+}
+
+.hover-border {
+    display: none;
+    width: 3px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: white;
 }
 
 .sidebar__picture {
@@ -100,21 +159,32 @@
     font-size: rem(11px);
     display: inline-block;
     cursor: pointer;
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
 }
 
 .search__icon {
     margin-left: rem(40px);
     margin-right: rem(13px);
+    @include tablets {
+        display: none;
+    }
 }
 
 .search__img {
     width: rem(14px);
     height: rem(14px);
     fill: #006edd;
+    @include tablets {
+        display: none;
+    }
 }
 
 .search-bar {
     flex-grow: 1;
+    @include tablets {
+        display: none;
+    }
 }
 
 .search-bar__input {
@@ -127,6 +197,9 @@
 
 .search-select {
     margin-right: rem(20px);
+    @include tablets {
+        display: none;
+    }
 }
 
 .search-select__menu {
@@ -141,6 +214,9 @@
 .profile {
     display: flex;
     align-items: center;
+    @include phones {
+        display: none;
+    }
 }
 
 .profile__info {
@@ -148,6 +224,9 @@
     flex-direction: column;
     justify-content: center;
     margin-left: rem(11px);
+    @include tablets {
+        display: none;
+    }
 }
 
 .profile__name {
@@ -166,6 +245,9 @@
     display: flex;
     align-items: center;
     padding-right: rem(10px);
+    @include tablets {
+        display: none;
+    }
 }
 
 .logout__img {
@@ -181,7 +263,25 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
+}
+
+.profile__picture-main {
     margin-left: rem(17px);
+    @include phones {
+        display: none;
+        border: 4px solid #edeef2;
+    }
+}
+
+.profile__picture-search {
+    display: none;
+    @include phones {
+        display: flex;
+        border: 4px solid #27629c;
+        margin-right: rem(27px);
+        width: rem(50px);
+        height: rem(45px);
+    }
 }
 
 .profile__image {
@@ -265,9 +365,12 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-left: rem(17px);
-    font-size: 14px;
+    font-size: rem(14px);
     text-transform: uppercase;
     font-family: 'Ubuntu Medium', Arial, Helvetica, sans-serif;
+    @include phones {
+        font-size: rem(13px);
+    }
 }
 
 .hide-button {
@@ -354,6 +457,24 @@
     width: rem(192px);
     position: relative;
     margin-right: rem(24px);
+    @include phones {
+        display: none;
+    }
+}
+
+.results__button-filter {
+    align-items: center;
+    margin-right: rem(24px);
+    display: none;
+    @include phones {
+        display: flex;
+    }
+}
+
+.results__button-filter-icon {
+    width: rem(14px);
+    height: rem(14px);
+    fill: #167ade;
 }
 
 .results-select__menu {
@@ -373,11 +494,19 @@
     color: #006edd;
     font-size: rem(11px);
     outline: none;
+    background: transparent;
+    z-index: 2;
+    @include tablets {
+        padding-left: rem(3px);
+    }
 }
 
 .dropdown-arrow__results {
     position: absolute;
     right: rem(8px);
+    @include tablets {
+        right: rem(5px);
+    }
 }
 
 .datasets {
@@ -411,7 +540,7 @@
 }
 
 .dataset__item {
-    height: rem(40px);
+    //height: rem(40px);
     border-top: 1px solid #ebf0f2;
     display: flex;
     align-items: center;
@@ -422,11 +551,43 @@
 }
 
 .dataset__item-info {
+    padding-top: rem(9px);
+    padding-bottom: rem(9px);
     margin-left: rem(27px);
 }
 
 .dataset__heading {
     height: rem(40px);
+    display: flex;
+    align-items: center;
+    font-size: rem(13px);
+    font-family: 'Ubuntu Light', Arial, Helvetica, sans-serif;
+    color: #919191;
+}
+
+.dataset__chapter {
+    font-size: rem(13px);
+    font-family: 'Ubuntu Light', Arial, Helvetica, sans-serif;
+    color: #72a4e7;
+    text-decoration: none;
+    &:visited {
+        color: #72a4e7;
+    }
+}
+
+.dataset__name {
+    font-size: rem(13px);
+    font-family: 'Ubuntu Light', Arial, Helvetica, sans-serif;
+    color: #919191;
+}
+
+.dataset__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.collapse-expand-icon {
     display: flex;
     align-items: center;
 }
@@ -474,4 +635,160 @@ label.css-label {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.results-special__filter {
+    display: flex;
+    align-items: center;
+    height: rem(50px);
+    margin-left: rem(24px);
+    margin-right: rem(24px);
+    border-bottom: 1px solid #ebf0f2;
+}
+
+.filter__dropdown {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+
+.results-special__dropdown {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border: 2px solid #edeef2;
+    border-radius: 3px;
+    padding: rem(7px);
+    font-family: 'Ubuntu Medium', Arial, Helvetica, sans-serif;
+    font-size: rem(13px);
+    //font-weight: bold;
+    background: transparent;
+    z-index: 2;
+}
+
+.filter__name {
+    margin-right: rem(18px);
+    font-family: 'Ubuntu Medium', Arial, Helvetica, sans-serif;
+    font-size: rem(13px);
+    //font-weight: bold;
+}
+
+.results-special__arrow {
+    position: absolute;
+    right: 8px;
+    align-self: center;
+    align-items: center;
+}
+
+.table-main {
+    width: 100%;
+    margin-left: rem(24px);
+    margin-right: rem(24px);
+    border-collapse: collapse;
+    @include phones {
+        display: none;
+    }
+}
+
+.table-mobile {
+    display: none;
+    border-collapse: collapse;
+    margin-left: rem(24px);
+    margin-right: rem(24px);
+    @include phones {
+        display: flex;
+    }
+}
+
+.table__row {
+    //display: flex;
+    border-bottom: 1px solid #ebf0f2;
+}
+
+.table-head__cell {
+    font-family: 'Ubuntu Medium', Arial, Helvetica, sans-serif;
+    font-size: rem(11px);
+    font-weight: bold;
+    text-align: left;
+    padding-top: rem(25px);
+    padding-bottom: rem(15px);
+    //vertical-align: top;
+    @include phones {
+        padding-top: rem(15px);
+    }
+}
+
+.table-body__cell {
+    font-family: 'Ubuntu Light', Arial, Helvetica, sans-serif;
+    font-size: rem(13px);
+    padding-top: rem(22px);
+    padding-bottom: rem(26px);
+    vertical-align: top;
+}
+
+.table-body__cell-mobile {
+    padding-right: rem(5px);
+    padding-left: rem(5px);
+    font-weight: bold;
+}
+
+.table-body__cell-text {
+    padding-right: rem(26px);
+    color: #919191;
+}
+
+.table__cell-first {
+    width: rem(232px);
+    font-weight: bold;
+    @include tablets {
+        width: rem(140px);
+    }
+}
+
+.table__cell-last {
+    width: rem(72px);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 45px;
+    @include phones {
+        width: initial;
+        margin-right: 0;
+    }
+}
+
+.table-body__cell.table__cell-middle {
+    flex-grow: 1;
+    color: #919191;
+}
+
+.info-icon {
+    cursor: pointer;
+}
+
+.go-icon {
+    cursor: pointer;
+}
+
+.info-icon__img {
+    width: rem(18px);
+    height: rem(18px);
+    fill: #e2e7ec;
+}
+
+.go-icon__img {
+    width: rem(18px);
+    height: rem(18px);
+    fill: #338aff;
+    margin-left: rem(10px);
+}
+
+.results__container {
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+}
+
+.results__container-passive {
+    height: 0;
 }

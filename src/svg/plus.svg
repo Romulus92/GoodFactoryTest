@@ -1,11 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-  <defs>
-    <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="18"
+   height="18"
+   viewBox="0 0 18 18"
+   version="1.1"
+   id="svg4510"
+   sodipodi:docname="plus.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata4514">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview4512"
+     showgrid="false"
+     inkscape:zoom="74.167645"
+     inkscape:cx="10.38618"
+     inkscape:cy="11.824284"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4510" />
+  <defs
+     id="defs4507">
+    <style
+       id="style4505">
       .cls-1 {
-        fill: #e1e6eb;
+        fill: #b2b2b2;
+        fill-rule: evenodd;
+      }
+    </style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5075">
+      <path
+         style="opacity:0.34100001;fill:#ffffff;fill-opacity:1;stroke:none"
+         d="m 946.9887,141.99564 h 7.9954 v 2.00896 h -7.9954 z"
+         id="path5077"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <style
+       id="style5081">
+      .cls-1 {
+        fill: #b2b2b2;
         fill-rule: evenodd;
       }
     </style>
   </defs>
-  <path id="Shape_525_copy_10" data-name="Shape 525 copy 10" class="cls-1" d="M944.643,566.014A2.645,2.645,0,0,1,942,563.369V550.64A2.645,2.645,0,0,1,944.643,548H957.35a2.645,2.645,0,0,1,2.64,2.645v12.729a2.646,2.646,0,0,1-2.641,2.645H944.643Zm0-16.079a0.705,0.705,0,0,0-.705.705v12.729a0.705,0.705,0,0,0,.705.7H957.35a0.705,0.705,0,0,0,.7-0.7V550.64a0.706,0.706,0,0,0-.7-0.705H944.643Zm3.362,8.071a1,1,0,1,1,0-2h5.981a1,1,0,1,1,0,2h-5.981Zm1.989-4a1,1,0,1,1,2,0v5.981a1,1,0,1,1-2,0v-5.981Z" transform="translate(-942 -548)"/>
+  <path
+     id="Shape_525_copy"
+     data-name="Shape 525 copy"
+     class="cls-1"
+     d="M 944.643,152.014 A 2.645,2.645 0 0 1 942,149.369 V 136.64 a 2.646,2.646 0 0 1 2.641,-2.646 h 12.709 a 2.646,2.646 0 0 1 2.64,2.646 v 12.729 a 2.646,2.646 0 0 1 -2.641,2.645 z m 0,-16.079 a 0.705,0.705 0 0 0 -0.705,0.7 v 12.729 a 0.705,0.705 0 0 0 0.705,0.705 h 12.707 a 0.705,0.705 0 0 0 0.7,-0.705 V 136.64 a 0.705,0.705 0 0 0 -0.7,-0.7 h -12.707 z m 3.362,8.071 a 1,1 0 1 1 0,-2 h 5.981 a 1,1 0 1 1 0,2 z"
+     transform="rotate(90,547.00848,-395.03644)"
+     clip-path="url(#clipPath5075)"
+     inkscape:connector-curvature="0"
+     style="fill:#b2b2b2;fill-rule:evenodd" />
+  <path
+     d="m 2.6411399,18.030344 a 2.645,2.645 0 0 1 -2.64300004,-2.645 V 2.6563431 a 2.646,2.646 0 0 1 2.64100004,-2.646 H 15.348139 a 2.646,2.646 0 0 1 2.64,2.646 V 15.385344 a 2.646,2.646 0 0 1 -2.641,2.645 z m 0,-16.0790009 a 0.705,0.705 0 0 0 -0.705,0.7 V 15.380344 a 0.705,0.705 0 0 0 0.705,0.705 H 15.348139 a 0.705,0.705 0 0 0 0.7,-0.705 V 2.6563431 a 0.705,0.705 0 0 0 -0.7,-0.7 H 2.6411399 Z m 3.362,8.0709999 a 1,1 0 1 1 0,-1.9999999 H 11.98414 a 1,1 0 1 1 0,1.9999999 z"
+     class="cls-1"
+     data-name="Shape 525 copy"
+     id="Shape_525_copy-5"
+     inkscape:connector-curvature="0"
+     style="fill:#b2b2b2;fill-rule:evenodd" />
 </svg>

@@ -16,6 +16,8 @@ html(lang="en")
             .header__burger-bar.middle
             .header__burger-bar.bottom
         .search
+          .logo-text__search
+            span.logo-text__search-text Лого
           .search__icon
             svg.search__img
               use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens")
@@ -25,8 +27,10 @@ html(lang="en")
             select.search-select__menu(name='search' size='1')
               option(selected value="name") по названию
               option(value="date") по дате
+          .profile__picture.profile__picture-search
+            img.profile__image(src='assets/images/profile.jpg')    
         .profile
-          .profile__picture
+          .profile__picture.profile__picture-main
             img.profile__image(src='assets/images/profile.jpg')
           .profile__info
             span.profile__name Иванов Иван
@@ -39,56 +43,67 @@ html(lang="en")
           .sidebar__wrap
             ul.sidebar__menu
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#home")
                 a.sidebar__link Главная
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#puzzle")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img.sidebar__img-paper
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#paper")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#download")
                 a.sidebar__link Пункт меню в 2 строчки
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#buble")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#hash")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#book")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#window")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#person")
                 a.sidebar__link Пункт меню
               li.sidebar__item
+                .hover-border
                 .sidebar__picture
                   svg.sidebar__img
                     use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#pen")
@@ -106,117 +121,105 @@ html(lang="en")
                 .results__info
                   h2.results__heading По формам сбора
                   .hide-button
-                    svg.hide__img
+                    svg.hide__img.hide__img-minus
                       use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#minus")
-              .results-formal__controls
-                .results__search
-                  input.results__searchbar(type="search" placeholder="Форма поиска") 
-                  .results__search-icon.results__search-icon-controls
-                    svg.results__search-img
-                      use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens")
-                    .dropdown-arrow
-                      svg.arrow__icon
-                        use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#arrow")
-                .results__button
-                  select.results-select__menu(name='results' size='1')
-                    option(selected value="report") Сформировать отчет
-                    option(value="balance") Посмотреть баланс
-                  .dropdown-arrow.dropdown-arrow__results
-                    svg.arrow__icon
-                      use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#arrow")
-              ul.datasets
-                li.dataset
-                  .dataset-info
-                    input(type="checkbox" id="check1" class="css-checkbox")
-                    label.css-label(for='check1')
-                    .dataset__icon
-                      svg.dataset__icon-img
-                        use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#folder")
-                    span.dataset__heading Открытые данные
-                    .collapse-expand-icon
-                  ul.dataset__list
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id="check2" class="css-checkbox")
-                        label.css-label(for='check2')
-                        a.dataset__chapter(href="") Глава 1.
-                        span.dataset__name Сведения
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id="check3" class="css-checkbox")
-                        label.css-label(for='check3')
-                        a.dataset__chapter(href="") Глава 2.
-                        span.dataset__name Сведения длинное название
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id="check4" class="css-checkbox")
-                        label.css-label(for='check4')
-                        a.dataset__chapter(href="") Глава 3.
-                        span.dataset__name Сведения длинное название
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id='check5' class="css-checkbox")
-                        label.css-label(for='check5')
-                        a.dataset__chapter(href="") Глава 4.
-                        span.dataset__name Сведения длинное название
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id='check6' class="css-checkbox")
-                        label.css-label(for='check6')
-                        a.dataset__chapter(href="") Глава 5.
-                        span.dataset__name Сведения очень длинное название уместилось в 3 строки
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id="check7" class="css-checkbox")
-                        label.css-label(for='check7')
-                        a.dataset__chapter(href="") Глава 6.
-                        span.dataset__name Сведения очень длинное название уместилось в 3 строки
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id='check8' class="css-checkbox")
-                        label.css-label(for="check1")
-                        a.dataset__chapter(href="") Глава 7.
-                        span.dataset__name Сведения очень длинное название уместилось в 3 строки
-                li.dataset
-                  .dataset-info
-                    input(type="checkbox" id='check9' class="css-checkbox")
-                    label.css-label(for='check9')
-                    img.dataset__icon
-                    span.dataset__heading Данные 2
-                    .collapse-expand-icon
-                  ul.dataset__list
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id='check10' class="css-checkbox")
-                        label.css-label(for='check10')
-                        a.dataset__chapter(href="") Глава 1.
-                        span.dataset__name Сведения
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id='check11' class="css-checkbox")
-                        label.css-label(for='check11')
-                        a.dataset__chapter(href="") Глава 2.
-                        span.dataset__name Сведения длинное название
-                li.dataset
-                  .dataset-info
-                    input(type="checkbox" id='check12' class="css-checkbox")
-                    label.css-label(for='check12')
-                    img.dataset__icon
-                    span.dataset__heading Данные 3
-                    .collapse-expand-icon
-                  ul.dataset__list
-                    li.dataset__item
-                      .dataset__item-info
-                        input(type="checkbox" id='check13' class="css-checkbox")
-                        label.css-label(for='check13')
-                        a.dataset__chapter(href="") Глава 1.
-                        span.dataset__name Сведения
-                    li.dataset__item.dataset__item-last
-                      .dataset__item-info
-                        input(type="checkbox" id="check14" class="css-checkbox")
-                        label.css-label(for='check14')
-                        a.dataset__chapter(href="") Глава 2.
-                        span.dataset__name Сведения длинное название
+              .results__wrapper
+                .results__container
+                  .results-formal__controls
+                    .results__search
+                      input.results__searchbar(type="search" placeholder="Форма поиска") 
+                      .results__search-icon.results__search-icon-controls
+                        svg.results__search-img
+                          use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#lens")
+                        .dropdown-arrow
+                          svg.arrow__icon
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#arrow")
+                    .results__button
+                      select.results-select__menu(name='results' size='1')
+                        option(selected value="report") Сформировать отчет
+                        option(value="balance") Посмотреть баланс
+                      .dropdown-arrow.dropdown-arrow__results
+                        svg.arrow__icon
+                          use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#arrow")
+                    .results__button-filter
+                      svg.results__button-filter-icon
+                          use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#filter")
+                  ul.datasets
+                    li.dataset
+                      .dataset-info
+                        input(type="checkbox" id="check1" class="css-checkbox")
+                        label.css-label(for='check1')
+                        .dataset__icon
+                          svg.dataset__icon-img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#folder")
+                        .dataset__content
+                          span.dataset__heading Открытые данные
+                          .collapse-expand-icon
+                            svg.hide__img.hide__img-minus
+                              use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#minus")
+                      ul.dataset__list
+                        li.dataset__item
+                          .dataset__item-info
+                            input(type="checkbox" id="check2" class="css-checkbox")
+                            label.css-label(for='check2')
+                            a.dataset__chapter(href="") Раздел 1.
+                            span.dataset__name Сведения
+                        li.dataset__item
+                          .dataset__item-info
+                            input(type="checkbox" id="check3" class="css-checkbox")
+                            label.css-label(for='check3')
+                            a.dataset__chapter(href="") Раздел 2.
+                            span.dataset__name Сведения длинное название
+                        li.dataset__item
+                          .dataset__item-info
+                            input(type="checkbox" id="check4" class="css-checkbox")
+                            label.css-label(for='check4')
+                            a.dataset__chapter(href="") Раздел 3.
+                            span.dataset__name Сведения длинное название
+                        li.dataset__item
+                          .dataset__item-info
+                            input(type="checkbox" id='check5' class="css-checkbox")
+                            label.css-label(for='check5')
+                            a.dataset__chapter(href="") Раздел 4.
+                            span.dataset__name Сведения длинное название
+                        li.dataset__item
+                          .dataset__item-info
+                            input(type="checkbox" id='check6' class="css-checkbox")
+                            label.css-label(for='check6')
+                            a.dataset__chapter(href="") Раздел 5.
+                            span.dataset__name Сведения очень длинное название уместилось в 3 строки
+                        li.dataset__item
+                          .dataset__item-info
+                            input(type="checkbox" id="check7" class="css-checkbox")
+                            label.css-label(for='check7')
+                            a.dataset__chapter(href="") Раздел 6.
+                            span.dataset__name Сведения очень длинное название уместилось в 3 строки
+                        li.dataset__item
+                          .dataset__item-info
+                            input(type="checkbox" id='check8' class="css-checkbox")
+                            label.css-label(for="check1")
+                            a.dataset__chapter(href="") Раздел 7.
+                            span.dataset__name Сведения очень длинное название уместилось в 3 строки
+                    li.dataset
+                      .dataset-info
+                        input(type="checkbox" id='check9' class="css-checkbox")
+                        label.css-label(for='check9')
+                        img.dataset__icon
+                        .dataset__content
+                          span.dataset__heading Данные 2
+                          .collapse-expand-icon
+                            svg.hide__img.hide__img-plus
+                              use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#plus")
+                    li.dataset
+                      .dataset-info
+                        input(type="checkbox" id='check12' class="css-checkbox")
+                        label.css-label(for='check12')
+                        img.dataset__icon
+                        .dataset__content
+                          span.dataset__heading Данные 3
+                          .collapse-expand-icon
+                            svg.hide__img.hide__img-plus
+                              use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#plus")
             .results-special
               .results__header
                 .results__search-icon
@@ -225,37 +228,108 @@ html(lang="en")
                 .results__info
                   h2.results__heading Специализированные
                   .hide-button
-                    svg.hide__img
+                    svg.hide__img.hide__img-minus
                       use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#minus")
-              .results-special__filter
-                span.filter__name
-                .filter__dropdown
-                  .dropdown
-              table.table
-                thead.table__head
-                  tr.table__row
-                    th.table-head__cell Наименование отчета
-                    th.table-head__cell Описание
-                    th.table-head__cell Подробности
-                tbody
-                  tr.table__row
-                    td.table-body__cell Незагружаемые
-                    td.table-body__cell Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
-                    td.table-body__cell  
-                      img.info-icon(src="", alt="")
-                      img.play-icon(src="", alt="")
-                  tr.table__row
-                    td.table-body__cell Незагружаемые
-                    td.table-body__cell Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
-                    td.table-body__cell  
-                      img.info-icon(src="", alt="")
-                      img.play-icon(src="", alt="")
-                  tr.table__row
-                    td.table-body__cell Незагружаемые
-                    td.table-body__cell Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
-                    td.table-body__cell  
-                      img.info-icon(src="", alt="")
-                      img.play-icon(src="", alt="")
+              .results__container
+                .results-special__filter
+                  span.filter__name Группа отчета
+                  .filter__dropdown
+                    select.results-special__dropdown(name='results-special', size='1')
+                      option(selected value="sets") Дата-сеты
+                      option(value="chapters") Разделы
+                    .results-special__arrow
+                      svg.arrow__icon
+                        use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#arrow")
+                table.table-main
+                  thead.table__head
+                    tr.table__row.table__row-head
+                      th.table-head__cell.table__cell-first Наименование отчета
+                      th.table-head__cell.table__cell-middle Описание
+                      th.table-head__cell.table__cell-last Подробности
+                  tbody
+                    tr.table__row.table__row-body
+                      td.table-body__cell.table__cell-first Незагружаемые
+                      td.table-body__cell.table__cell-middle Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                      td.table-body__cell.table__cell-last   
+                        a.info-icon
+                          svg.info-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#info")
+                        a.go-icon
+                          svg.go-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#go")
+                    tr.table__row.table__row-body
+                      td.table-body__cell.table__cell-first Незагружаемые
+                      td.table-body__cell.table__cell-middle Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                      td.table-body__cell.table__cell-last   
+                        a.info-icon
+                          svg.info-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#info")
+                        a.go-icon
+                          svg.go-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#go")
+                    tr.table__row.table__row-body
+                      td.table-body__cell.table__cell-first Незагружаемые
+                      td.table-body__cell.table__cell-middle Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                      td.table-body__cell.table__cell-last  
+                        a.info-icon
+                          svg.info-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#info")
+                        a.go-icon
+                          svg.go-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#go")
+                table.table-mobile
+                  tbody
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Наименование отчета
+                      td.table-body__cell.table-body__cell-mobile Незагружаемые
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Описание
+                      td.table-body__cell.table-body__cell-text Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Подробности
+                      td.table-body__cell.table__cell-last  
+                        a.info-icon
+                          svg.info-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#info")
+                        a.go-icon
+                          svg.go-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#go")
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Наименование отчета
+                      td.table-body__cell.table-body__cell-mobile Незагружаемые
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Описание
+                      td.table-body__cell.table-body__cell-text Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Подробности
+                      td.table-body__cell.table__cell-last  
+                        a.info-icon
+                          svg.info-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#info")
+                        a.go-icon
+                          svg.go-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#go")
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Наименование отчета
+                      td.table-body__cell.table-body__cell-mobile Незагружаемые
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Описание
+                      td.table-body__cell.table-body__cell-text Процедура текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    tr.table__row
+                      td.table-body__cell.table-body__cell-mobile Подробности
+                      td.table-body__cell.table__cell-last  
+                        a.info-icon
+                          svg.info-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#info")
+                        a.go-icon
+                          svg.go-icon__img
+                            use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#go")
+    //script(src="assets/scripts/jquery-3.2.1.min.js")
+    //script(src='assets/scripts/main.js')
+
+
+                  
+
                 
               
                 
